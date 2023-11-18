@@ -9,6 +9,10 @@ public class PointToAnalysisTest {
 
     public void entry1(){
         Animal animal = new Pig();
+        callee1(animal);
+    }
+
+    public void callee1(Animal animal){
         String eat = animal.eat();
         sink(eat);
     }
